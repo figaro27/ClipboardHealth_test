@@ -1,29 +1,81 @@
-# Tailwind CSS example
+<h1 align="center">
+Next.js + Tailwind Project
+</h1>
 
-This is an example of using [Tailwind CSS](https://tailwindcss.com) in a Next.js project.
+I used normal font, concentrated on the layouts.
+If you give me the design (like Figma), I will make it pixcel-perfect.
+I built this with Next.js + TailWind.
 
-## Deploy your own
+I can send you my previous works related with TailWind.
+Sincerely.
 
-Deploy the example using [Vercel](https://vercel.com):
+Takeshi
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Public URL
 
-## How to use
+```terminal
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
-## Notes
 
-This example is a basic starting point for using [Tailwind CSS](https://tailwindcss.com) with Next.js. It includes the following [PostCSS](https://github.com/postcss/postcss) plugins:
+## Pre-requirements
 
-- [postcss-preset-env](https://preset-env.cssdb.org/) - Adds stage 2+ features and autoprefixes
+- [MongoDB]
+- [Node]
+- [npm]
 
-To control the generated stylesheet's filesize, this example uses Tailwind CSS' [`purge` option](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css) to remove unused CSS.
+## Front-End usage
+
+#### Port: 3000
+```terminal
+$ npm install
+$ npm run dev
+```
+
+## Back-End usage
+
+#### Port: 8000
+
+```terminal
+$ cd server
+$ npm install
+$ npm run build
+$ npm start
+```
+
+#### Seed for "Jobs" data
+
+For filter, didn't make schema for it. Because it is needed other relationship with other collections.
+Used filter.json as a constant.
+
+```terminal
+md-seed run -d
+```
+
+#### Endpoints
+
+```curl
+http://localhost:8000/jobs
+```
+
+and
+
+```curl
+http://localhost:8000/jobs/filter
+```
+## Results
+
+![1](1.png?raw=true)
+
+![2](2.png?raw=true)
+
+![3](3.png?raw=true)
+
+![4](4.png?raw=true)
+
+## Created by Takeshi Ishikawa
+
+[Takeshi Ishikawa](https://www.linkedin.com/in/takeshi-ishikawa-a2b174154)
+
+

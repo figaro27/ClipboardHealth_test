@@ -1,4 +1,3 @@
-import { getFontDefinitionFromNetwork } from "next/dist/next-server/server/font-utils";
 import React from "react";
 
 const Footer =  () => {

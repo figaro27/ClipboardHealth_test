@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setModal } from '../../../redux/actions';
+import { setModal } from 'redux/actions';
 
 const JobModal = ({ showModal, titleModal, textModal, setModal }) => {
 

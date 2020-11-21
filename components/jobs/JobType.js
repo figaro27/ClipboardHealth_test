@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from 'react-redux';
 
-import { setModal } from '../../../redux/actions'
+import { setModal } from 'redux/actions'
 
 export const JobType =  ({ setModal, data, name }) => {
   const changeModal = () => {
@@ -20,7 +20,7 @@ export const JobType =  ({ setModal, data, name }) => {
                 <h1>{ item['key'] } <span className="text-gray-500"> { item['doc_count'] }</span></h1>
               </div>
             )
-            else if(idx == 10) return (
+            else if(idx === 10) return (
               <div className="flex my-2" key={idx}>
                 <h1 className="text-indigo-600 cursor-pointer" onClick={changeModal}>Show more</h1>
               </div>

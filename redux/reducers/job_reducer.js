@@ -8,7 +8,7 @@ let INITIAL_STATE = {
   job_filter: {}
 }
 
-export default (state=INITIAL_STATE, action) => {
+const reducer = (state=INITIAL_STATE, action) => {
   switch (action.type) {
       case JOB_LIST:
           return { ...state, jobs: action.payload.jobs }
@@ -20,4 +20,4 @@ export default (state=INITIAL_STATE, action) => {
   }
 }
 
-// export default Job
+export default reducer

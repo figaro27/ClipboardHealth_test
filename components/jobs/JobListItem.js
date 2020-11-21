@@ -15,17 +15,9 @@ const JobListItem = (props) => {
         <h1 className="mx-2">
           {props.jobs.total_jobs_in_hospital} jobs for {props.jobs.name}</h1>
       </div>
-      {
-        showJobs ?
-        <div>
-          {
-            props.jobs.items.map( (item, idx) => (
-              <JobInfo jobInfo={item} key={idx}/>
-            ))
-          }
-        </div>
-        : <div></div>
-      }
+      {showJobs && props.jobs.items.map((item, idx) => (
+        <JobInfo jobInfo={item} key={idx}/>
+      ))}
     </div>
   )
 }

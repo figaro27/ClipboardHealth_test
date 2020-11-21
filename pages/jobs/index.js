@@ -2,13 +2,14 @@
 import React, { useEffect } from "react";
 import { connect } from 'react-redux';
 
-import { getJobs, getJobFilter } from '../../redux/actions';
+import { getJobs, getJobFilter } from 'redux/actions';
 
-import JobType from './components/JobType';
-import JobList from './components/JobList';
-import JobModal from './components/JobModal';
+import JobType from 'components/jobs/JobType';
+import JobList from 'components/jobs/JobList';
+import JobModal from 'components/jobs/JobModal';
 
-// import data_filter from './job-filter-dummy';
+import data_filter from 'constant/job-filter-dummy';
+import data_jobs from 'constant/jobs-dummy'
 
 export const Jobs =  ({ jobs, job_filter, getJobs, getJobFilter }) => {
   const job_filters = [
@@ -36,13 +37,13 @@ export const Jobs =  ({ jobs, job_filter, getJobs, getJobFilter }) => {
       <div className="grid grid-cols-5 gap-4">
         <div className="col-span-1">
           {
-            Object.keys(job_filter).map( (item, idx) => (
-              <JobType name={ (item.split('_')).join(" ").toUpperCase() } data={job_filter[item]} key={idx}/>
+            Object.keys(data_filter).map( (item, idx) => (
+              <JobType name={ (item.split('_')).join(" ").toUpperCase() } data={data_filter[item]} key={idx}/>
             ))
           }
         </div>
         <div className="col-span-4">
-          <JobList jobs={jobs} jobfilter={job_filter}/>
+          <JobList jobs={data_jobs} jobfilter={data_filter}/>
         </div>
       </div>
 

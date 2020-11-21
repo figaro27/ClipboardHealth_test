@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { combineReducers } from 'redux';\nimport modal from './modal_reduce';\nimport job from './job_reducer';\nconst rootReducer = combineReducers({\n  modal,\n  job\n});\nexport default rootReducer;","map":null,"metadata":{},"sourceType":"module"}

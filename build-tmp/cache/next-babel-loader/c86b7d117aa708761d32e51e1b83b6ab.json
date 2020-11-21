@@ -1,1 +1,0 @@
-{"ast":null,"code":"export const MODAL = 'MODAL';\nexport const JOB_LIST = 'JOB_LIST';\nexport const JOB_FILTER = 'JOB_FILTER';","map":null,"metadata":{},"sourceType":"module"}

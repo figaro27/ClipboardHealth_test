@@ -1,4 +1,4 @@
-export default {
+{
   "job_type": [
     {
       "key": "Per-Diem",
@@ -122,6 +122,5 @@ export default {
       "key": "Junior",
       "doc_count": 1803
     }
-
   ]
 }

@@ -21,7 +21,7 @@ export default function Jobs({  }) {
   useEffect(() => {
 
     async function getJobs() {
-      let response = await fetch(`${process.env.SERVER_BASE_URL}/api/job`, {
+      let response = await fetch(`/api/job`, {
         method: 'POST',
         body: JSON.stringify(searchIndex),
         headers: {
@@ -33,7 +33,7 @@ export default function Jobs({  }) {
     }
 
     async function getFilters() {
-      const res = await fetch(`${process.env.SERVER_BASE_URL}/api/filter`);
+      const res = await fetch(`/api/filter`);
       let data = await res.json();
       setFilters(data);
     }
